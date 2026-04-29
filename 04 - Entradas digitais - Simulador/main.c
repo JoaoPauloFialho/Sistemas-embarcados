@@ -45,7 +45,7 @@ void app_main(void) {
 
     update_leds(contador);
 
-    while(1) {
+    for(;;) {
         int estado_atual_btn_a = gpio_get_level(BTN_A);
         int estado_atual_btn_b = gpio_get_level(BTN_B);
 
